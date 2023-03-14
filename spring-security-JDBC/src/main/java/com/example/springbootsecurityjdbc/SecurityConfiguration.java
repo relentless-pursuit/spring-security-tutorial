@@ -15,8 +15,12 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class SecurityConfiguration {
 
+    public final DataSource dataSource;
+
     @Autowired
-    public DataSource dataSource;
+    public SecurityConfiguration(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     @Autowired
     public void authManager(AuthenticationManagerBuilder auth) throws Exception {

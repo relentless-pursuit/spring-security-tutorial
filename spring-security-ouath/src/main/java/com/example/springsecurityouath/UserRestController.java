@@ -11,14 +11,14 @@ public class UserRestController {
         return "Welcome to Dena bank";
     }
 
-//    @GetMapping("/admin")
-//    public String adminProcess() {
-//        return "Welcome admin";
-//    }
-//
-//
-//    @GetMapping("/user")
-//    public String userProcess() {
-//        return "Welcome user";
-//    }
+    @GetMapping("/admin")
+    public String adminProcess() {
+        return "Welcome admin";
+    }
+
+
+    @GetMapping("/user")
+    public String userProcess() {
+        return "Welcome user";
+    }
 }
